@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暖爪公益 - 让爱不再流浪</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="猫猫.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-paw"></i> 暖爪公益
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">首页</a></li>
+                    <li><a href="#adopt" class="nav-link">可领养宠物</a></li>
+                    <li><a href="#process" class="nav-link">领养流程</a></li>
+                    <li><a href="#stories" class="nav-link">领养故事</a></li>
+                    <li><a href="#volunteer" class="nav-link">志愿者 & 捐助</a></li>
+                    <li><a href="#map-section" class="nav-link">附近机构</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="搜索品种、名字...">
+                    <button id="search-btn"><i class="fa-solid fa-search"></i></button>
+                </div>
+                <button class="btn-login" id="login-btn"><i class="fa-regular fa-user"></i> 登录</button>
+                <div class="mobile-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>每一个生命，<br>都值得被温柔以待</h1>
+            <p>我们要做的不仅仅是救助，而是为流浪的毛孩子找到一个温暖的家。透明公益，让爱有迹可循。</p>
+            <div class="hero-btns">
+                <a href="#adopt" class="btn btn-primary">立即领养</a>
+                <a href="#volunteer" class="btn btn-outline">成为志愿者</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <strong data-target="1204" class="counter">0</strong>
+                    <span>已领养</span>
+                </div>
+                <div class="stat-item">
+                    <strong data-target="580" class="counter">0</strong>
+                    <span>待领养</span>
+                </div>
+                <div class="stat-item">
+                    <strong data-target="30" class="counter">0</strong>
+                    <span>合作机构</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="adopt" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>等待回家的毛孩子</h2>
+                <p>它们性格各异，但都渴望一个温暖的怀抱</p>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="dog">狗狗</button>
+                    <button class="filter-btn" data-filter="cat">猫咪</button>
+                </div>
+                <div class="filter-selects">
+                    <select id="age-filter">
+                        <option value="all">年龄不限</option>
+                        <option value="baby">幼年 (0-1岁)</option>
+                        <option value="adult">成年 (1-8岁)</option>
+                        <option value="senior">老年 (8岁+)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="pets-grid" id="pets-container">
+                </div>
+        </div>
+    </section>
+
+    <section id="process" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>领养流程</h2>
+                <p>科学领养，对生命负责，只需简单的4步</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-card">
+                    <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>1. 线上筛选</h3>
+                    <p>浏览待领养宠物，了解它们的信息和性格。</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-card">
+                    <div class="step-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3>2. 提交申请</h3>
+                    <p>填写真实资料，我们将评估您的领养条件。</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-card">
+                    <div class="step-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>3. 线下互动</h3>
+                    <p>前往机构与它见面，确认彼此是否合适。</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-card">
+                    <div class="step-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
+                    <h3>4. 办理领养</h3>
+                    <p>签订协议，带它回家，开启幸福生活。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stories" class="section-padding bg-warm">
+        <div class="container">
+            <div class="section-header">
+                <h2>幸福的回响</h2>
+                <p>看看领养家庭的真实反馈</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1535930749574-1399327ce78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="用户合影">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="author">张女士</span>
+                            <span class="date">领养于 2023.05</span>
+                        </div>
+                        <h3>"它是治愈我的小天使"</h3>
+                        <p>刚带豆豆回家时它很胆小，现在每天都要贴贴。感谢平台让我遇到了它，生活变得充满阳光。</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-img">
+                        <img src="https://img1.baidu.com/it/u=3456784924,3720142252&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667" alt="用户合影">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="author">李先生</span>
+                            <span class="date">领养于 2023.08</span>
+                        </div>
+                        <h3>"没想到领养这么规范"</h3>
+                        <p>整个流程非常透明，志愿者很耐心地解答了我的养猫疑问。现在大橘已经胖了三斤啦！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteer" class="section-padding">
+        <div class="container split-layout">
+            <div class="split-box volunteer-box">
+                <i class="fa-solid fa-hand-holding-heart icon-bg"></i>
+                <h3>加入志愿者</h3>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> 参与线下救助活动</li>
+                    <li><i class="fa-solid fa-check"></i> 协助基底清洁与喂养</li>
+                    <li><i class="fa-solid fa-check"></i> 摄影与新媒体运营支持</li>
+                </ul>
+                <button class="btn btn-primary" onclick="window.open('https://chinavolunteer.mca.gov.cn/site/volreg')">我要报名</button>
+            </div>
+            <div class="split-box donate-box">
+                <i class="fa-solid fa-gift icon-bg"></i>
+                <h3>爱心捐助</h3>
+                <p>您的每一笔捐赠都将公开透明，直接用于流浪动物的医疗与食物。</p>
+                <div class="donate-options" id="donate-options">
+                    <button class="donate-btn" data-amount="10">¥ 10</button>
+                    <button class="donate-btn" data-amount="50">¥ 50</button>
+                    <button class="donate-btn active" data-amount="100">¥ 100</button>
+                    <button class="donate-btn" data-amount="custom">自定义</button>
+                </div>
+                <button class="btn btn-secondary" id="do-donate-btn">立即捐助</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="map-section" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>寻找身边的温暖</h2>
+                <div class="map-controls">
+                    <select id="city-select">
+                        <option value="bj">北京市</option>
+                        <option value="sh">四川市</option>
+                        <option value="gz">广州市</option>
+                        <option value="gz">上海市</option>
+                    </select>
+                    <div class="view-toggle">
+                        <button class="active" id="btn-map-view"><i class="fa-solid fa-map"></i> 地图</button>
+                        <button id="btn-list-view"><i class="fa-solid fa-list"></i> 列表</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container-wrapper">
+                <div id="map-view" class="map-interface active">
+                    <div class="mock-map">
+                        <div id="map-markers-container"></div>
+                    </div>
+                </div>
+                <div id="list-view" class="list-interface">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>暖爪公益</h3>
+                <p>致力于构建人与动物和谐共处的社会环境。</p>
+                <div class="social-links">
+                    <a href="https://wx.qq.com/"><i class="fa-brands fa-weixin"></i></a>
+                    <a href="https://s.weibo.com/weibo?q=%E7%88%B1%E5%BF%83%E5%AE%A0%E7%89%A9%E5%B7%A5%E8%89%BA"><i class="fa-brands fa-weibo"></i></a>
+                    <a href="https://www.douyin.com/user/MS4wLjABAAAAMdHHQboyHwfJYsL7Q2YSfkVMAWuf4RUJbTPYb-RdXZZn7pdT4YIqL4jFLKZcbPK5?from_tab_name=main&vid=7283831740383218979"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="https://www.csapa.org/index.jhtml" target="_blank">中国小动物保护协会</a></li>
+                    <li><a href="https://mianyang.zhiyuanyun.com/">志愿者报名中心</a></li>
+                    <li><a href="#">免责声明</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <p>电话: 400-123-4567</p>
+                <p>微信: warm_paw_helper</p>
+                <p>地址: 四川绵阳涪城区1243号</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 暖爪公益平台. 让爱回家.</p>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal-content" id="modal-body">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div id="modal-inner-content"></div>
+        </div>
+    </div>
+
+    <script src="哈基米.js"></script>
+</body>
+</html>
